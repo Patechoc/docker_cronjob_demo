@@ -1,7 +1,6 @@
 # /etc/cron.d/hello-cron: crontab entries demo
 
 SHELL=/bin/sh
-TODAY=/bin/echo \`date\`
 
 # .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)
@@ -22,6 +21,6 @@ TODAY=/bin/echo \`date\`
 
 # test crontab from within docker
 * * * * * root echo "Hello world" >> /var/log/cron.log 2>&1
-* * * * * root $TODAY >> /var/log/cron.log 2>&1
+* * * * * root echo `date` >> /var/log/cron.log 2>&1
 
 # Don't remove the empty line at the end of this file. It is required to run the cron job

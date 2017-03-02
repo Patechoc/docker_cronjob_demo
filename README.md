@@ -8,13 +8,13 @@ This repo is inspired by this post from [Julien Boulay](https://www.ekito.fr/peo
 ### Run the image as is for a demo
 
 ```shell
-sudo docker run -it patrickmerlot:cronjob_demo
+sudo docker run -it patrickmerlot/cronjob_demo
 ```
 
 ### Build the image
 
 ```shell
-sudo docker build --rm -t patrickmerlot:cronjob_demo .
+sudo docker build --rm -t patrickmerlot/cronjob_demo .
 ```
 
 ### Sending reports/alert by email
